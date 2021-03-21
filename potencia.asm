@@ -7,18 +7,17 @@ dw aux	0
 dw aux2 0 
 dw aux3 1
 dw limite 0
-dw extra 0
+dw extra 1
 
 .code
-eti:    mov extra, aux2
-        add base,aux
+eti:	add base,aux
         add aux3,aux2
-	cmp aux2,aux2
+	cmp aux2,base
         beq fin
         cmp aux3,aux3
-fin:    beq eti
-        add aux3, limite
-end:    cmp limite, exponente
-        beq end
-        cmp aux3, aux3 
-        beq eti                  
+        beq eti
+fin:    add aux3, extra
+        cmp extra, exponente
+end:    beq end
+        cmp extra, extra
+        beq eti                              
