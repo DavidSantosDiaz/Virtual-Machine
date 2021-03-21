@@ -6,13 +6,12 @@ dw var2	5
 dw aux	0
 dw aux2 0 
 dw aux3 1
-dw t 1
 
 .code
 eti:	add var1,aux
         add aux3,aux2
 	cmp aux2,var2
 fin:    beq fin
-        cmp t,t
+        cmp aux3,aux3
         beq eti
                            
