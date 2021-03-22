@@ -2,29 +2,29 @@
 
 
 .data 20 ;dirección de inicio de los datos
-dw base	3
-dw exponente 3
-dw var2	0
-dw aux	0
-dw aux2 0 
-dw aux3 1
-dw limite 0
-dw cero 0
+dw base	5
+dw exponente 2
+dw limite1 0
+dw limite2 1
+dw extra 1
 dw resultado 0
+dw extra2 1
+
 
 .code
-        mov base, var2
-        mov var2, resultado
-eti:	add base,aux
-        add aux3,aux2
-	cmp aux2,var2
+
+        mov base, limite1
+ rv:    mov extra2, limite2  
+ eti:   add base, resultado
+        
+        cmp limite2, base
         beq fin
-        cmp aux3,aux3
+        add extra2, limite2
+        cmp extra, extra
         beq eti
-fin:    add aux3, limite
-        mov aux, resultado
-        mov cero, aux2
-        cmp limite, exponente
+
+fin:    add extra2, extra       
+        cmp extra, exponente
 end:    beq end
-        cmp limite, limite
-        beq eti                                                            
+        cmp extra, extra
+        beq rv                                                 

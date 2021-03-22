@@ -14,41 +14,32 @@ Cop MOV
 ---------------
 #Direccion 1
 Cop MOV
- Op1    : 22
- Op2    :28
- Destino    :  22
- Valor    :  35612
- Valor en Binario:  1000101100011100
+ Op1    : 26
+ Op2    :23
+ Destino    :  26
+ Valor    :  36119
+ Valor en Binario:  1000110100010111
  Descripción:  ---
 ---------------
 #Direccion 2
 Cop ADD
  Op1    : 20
- Op2    :23
+ Op2    :25
  Destino    :  20
- Valor    :  2583
- Valor en Binario:  0000101000010111
+ Valor    :  2585
+ Valor en Binario:  0000101000011001
  Descripción:  ---
 ---------------
 #Direccion 3
-Cop ADD
- Op1    : 25
- Op2    :24
- Destino    :  25
- Valor    :  3224
- Valor en Binario:  0000110010011000
+Cop CMP
+ Op1    : 23
+ Op2    :20
+ Destino    :  23
+ Valor    :  19348
+ Valor en Binario:  0100101110010100
  Descripción:  ---
 ---------------
 #Direccion 4
-Cop CMP
- Op1    : 24
- Op2    :22
- Destino    :  24
- Valor    :  19478
- Valor en Binario:  0100110000010110
- Descripción:  ---
----------------
-#Direccion 5
 Cop BEQ
  Op1    : 8
  Op2    :8
@@ -57,13 +48,22 @@ Cop BEQ
  Valor en Binario:  1100010000001000
  Descripción:  ---
 ---------------
+#Direccion 5
+Cop ADD
+ Op1    : 26
+ Op2    :23
+ Destino    :  26
+ Valor    :  3351
+ Valor en Binario:  0000110100010111
+ Descripción:  ---
+---------------
 #Direccion 6
 Cop CMP
- Op1    : 25
- Op2    :25
- Destino    :  25
- Valor    :  19609
- Valor en Binario:  0100110010011001
+ Op1    : 24
+ Op2    :24
+ Destino    :  24
+ Valor    :  19480
+ Valor en Binario:  0100110000011000
  Descripción:  ---
 ---------------
 #Direccion 7
@@ -77,65 +77,47 @@ Cop BEQ
 ---------------
 #Direccion 8
 Cop ADD
- Op1    : 25
- Op2    :26
- Destino    :  25
- Valor    :  3226
- Valor en Binario:  0000110010011010
+ Op1    : 26
+ Op2    :24
+ Destino    :  26
+ Valor    :  3352
+ Valor en Binario:  0000110100011000
  Descripción:  ---
 ---------------
 #Direccion 9
-Cop MOV
- Op1    : 23
- Op2    :28
- Destino    :  23
- Valor    :  35740
- Valor en Binario:  1000101110011100
+Cop CMP
+ Op1    : 24
+ Op2    :21
+ Destino    :  24
+ Valor    :  19477
+ Valor en Binario:  0100110000010101
  Descripción:  ---
 ---------------
 #Direccion 10
-Cop MOV
- Op1    : 27
- Op2    :24
- Destino    :  27
- Valor    :  36248
- Valor en Binario:  1000110110011000
+Cop BEQ
+ Op1    : 10
+ Op2    :10
+ Destino    :  10
+ Valor    :  50442
+ Valor en Binario:  1100010100001010
  Descripción:  ---
 ---------------
 #Direccion 11
 Cop CMP
- Op1    : 26
- Op2    :21
- Destino    :  26
- Valor    :  19733
- Valor en Binario:  0100110100010101
+ Op1    : 24
+ Op2    :24
+ Destino    :  24
+ Valor    :  19480
+ Valor en Binario:  0100110000011000
  Descripción:  ---
 ---------------
 #Direccion 12
 Cop BEQ
- Op1    : 12
- Op2    :12
- Destino    :  12
- Valor    :  50700
- Valor en Binario:  1100011000001100
- Descripción:  ---
----------------
-#Direccion 13
-Cop CMP
- Op1    : 26
- Op2    :26
- Destino    :  26
- Valor    :  19738
- Valor en Binario:  0100110100011010
- Descripción:  ---
----------------
-#Direccion 14
-Cop BEQ
- Op1    : 2
- Op2    :2
- Destino    :  2
- Valor    :  49410
- Valor en Binario:  1100000100000010
+ Op1    : 1
+ Op2    :1
+ Destino    :  1
+ Valor    :  49281
+ Valor en Binario:  1100000010000001
  Descripción:  ---
 ---------------
 ---------------
@@ -152,41 +134,32 @@ Cop MOV
 ---------------
 #Direccion 1
 Cop MOV
- Op1    : 22
- Op2    :28
- Destino    :  22
- Valor    :  35612
- Valor en Binario:  1000101100011100
- Descripción:  ---
+ Op1    : 26
+ Op2    :23
+ Destino    :  26
+ Valor    :  36119
+ Valor en Binario:  1000110100010111
+ Descripción:  rv:
 ---------------
 #Direccion 2
 Cop ADD
  Op1    : 20
- Op2    :23
+ Op2    :25
  Destino    :  20
- Valor    :  2583
- Valor en Binario:  0000101000010111
+ Valor    :  2585
+ Valor en Binario:  0000101000011001
  Descripción:  eti:
 ---------------
 #Direccion 3
-Cop ADD
- Op1    : 25
- Op2    :24
- Destino    :  25
- Valor    :  3224
- Valor en Binario:  0000110010011000
+Cop CMP
+ Op1    : 23
+ Op2    :20
+ Destino    :  23
+ Valor    :  19348
+ Valor en Binario:  0100101110010100
  Descripción:  ---
 ---------------
 #Direccion 4
-Cop CMP
- Op1    : 24
- Op2    :22
- Destino    :  24
- Valor    :  19478
- Valor en Binario:  0100110000010110
- Descripción:  ---
----------------
-#Direccion 5
 Cop BEQ
  Op1    : 8
  Op2    :8
@@ -195,13 +168,22 @@ Cop BEQ
  Valor en Binario:  1100010000001000
  Descripción:  ---
 ---------------
+#Direccion 5
+Cop ADD
+ Op1    : 26
+ Op2    :23
+ Destino    :  26
+ Valor    :  3351
+ Valor en Binario:  0000110100010111
+ Descripción:  ---
+---------------
 #Direccion 6
 Cop CMP
- Op1    : 25
- Op2    :25
- Destino    :  25
- Valor    :  19609
- Valor en Binario:  0100110010011001
+ Op1    : 24
+ Op2    :24
+ Destino    :  24
+ Valor    :  19480
+ Valor en Binario:  0100110000011000
  Descripción:  ---
 ---------------
 #Direccion 7
@@ -215,65 +197,65 @@ Cop BEQ
 ---------------
 #Direccion 8
 Cop ADD
- Op1    : 25
- Op2    :26
- Destino    :  25
- Valor    :  3226
- Valor en Binario:  0000110010011010
+ Op1    : 26
+ Op2    :24
+ Destino    :  26
+ Valor    :  3352
+ Valor en Binario:  0000110100011000
  Descripción:  fin:
 ---------------
 #Direccion 9
-Cop MOV
- Op1    : 23
- Op2    :28
- Destino    :  23
- Valor    :  35740
- Valor en Binario:  1000101110011100
+Cop CMP
+ Op1    : 24
+ Op2    :21
+ Destino    :  24
+ Valor    :  19477
+ Valor en Binario:  0100110000010101
  Descripción:  ---
 ---------------
 #Direccion 10
-Cop MOV
- Op1    : 27
- Op2    :24
- Destino    :  27
- Valor    :  36248
- Valor en Binario:  1000110110011000
- Descripción:  ---
+Cop BEQ
+ Op1    : 10
+ Op2    :10
+ Destino    :  10
+ Valor    :  50442
+ Valor en Binario:  1100010100001010
+ Descripción:  end:
 ---------------
 #Direccion 11
 Cop CMP
- Op1    : 26
- Op2    :21
- Destino    :  26
- Valor    :  19733
- Valor en Binario:  0100110100010101
+ Op1    : 24
+ Op2    :24
+ Destino    :  24
+ Valor    :  19480
+ Valor en Binario:  0100110000011000
  Descripción:  ---
 ---------------
 #Direccion 12
 Cop BEQ
- Op1    : 12
- Op2    :12
- Destino    :  12
- Valor    :  50700
- Valor en Binario:  1100011000001100
- Descripción:  end:
+ Op1    : 1
+ Op2    :1
+ Destino    :  1
+ Valor    :  49281
+ Valor en Binario:  1100000010000001
+ Descripción:  ---
 ---------------
 #Direccion 13
-Cop CMP
- Op1    : 26
- Op2    :26
- Destino    :  26
- Valor    :  19738
- Valor en Binario:  0100110100011010
+Cop ---
+ Op1    : 0
+ Op2    :0
+ Destino    :  0
+ Valor    :  0
+ Valor en Binario:  0000000000000000
  Descripción:  ---
 ---------------
 #Direccion 14
-Cop BEQ
- Op1    : 2
- Op2    :2
- Destino    :  2
- Valor    :  49410
- Valor en Binario:  1100000100000010
+Cop ---
+ Op1    : 0
+ Op2    :0
+ Destino    :  0
+ Valor    :  0
+ Valor en Binario:  0000000000000000
  Descripción:  ---
 ---------------
 #Direccion 15
@@ -326,8 +308,8 @@ Cop ---
  Op1    : 0
  Op2    :0
  Destino    :  0
- Valor    :  3
- Valor en Binario:  0000000000000011
+ Valor    :  5
+ Valor en Binario:  0000000000000101
  Descripción:  base
 ---------------
 #Direccion 21
@@ -335,8 +317,8 @@ Cop ---
  Op1    : 0
  Op2    :0
  Destino    :  0
- Valor    :  3
- Valor en Binario:  0000000000000011
+ Valor    :  2
+ Valor en Binario:  0000000000000010
  Descripción:  exponente
 ---------------
 #Direccion 22
@@ -346,43 +328,43 @@ Cop ---
  Destino    :  0
  Valor    :  0
  Valor en Binario:  0000000000000000
- Descripción:  var2
+ Descripción:  limite1
 ---------------
 #Direccion 23
 Cop ---
  Op1    : 0
  Op2    :0
  Destino    :  0
- Valor    :  0
- Valor en Binario:  0000000000000000
- Descripción:  aux
+ Valor    :  1
+ Valor en Binario:  0000000000000001
+ Descripción:  limite2
 ---------------
 #Direccion 24
 Cop ---
  Op1    : 0
  Op2    :0
  Destino    :  0
- Valor    :  0
- Valor en Binario:  0000000000000000
- Descripción:  aux2
+ Valor    :  1
+ Valor en Binario:  0000000000000001
+ Descripción:  extra
 ---------------
 #Direccion 25
 Cop ---
  Op1    : 0
  Op2    :0
  Destino    :  0
- Valor    :  1
- Valor en Binario:  0000000000000001
- Descripción:  aux3
+ Valor    :  0
+ Valor en Binario:  0000000000000000
+ Descripción:  resultado
 ---------------
 #Direccion 26
 Cop ---
  Op1    : 0
  Op2    :0
  Destino    :  0
- Valor    :  0
- Valor en Binario:  0000000000000000
- Descripción:  limite
+ Valor    :  1
+ Valor en Binario:  0000000000000001
+ Descripción:  extra2
 ---------------
 #Direccion 27
 Cop ---
@@ -391,7 +373,7 @@ Cop ---
  Destino    :  0
  Valor    :  0
  Valor en Binario:  0000000000000000
- Descripción:  cero
+ Descripción:  ---
 ---------------
 #Direccion 28
 Cop ---
@@ -400,7 +382,7 @@ Cop ---
  Destino    :  0
  Valor    :  0
  Valor en Binario:  0000000000000000
- Descripción:  resultado
+ Descripción:  ---
 ---------------
 #Direccion 29
 Cop ---
