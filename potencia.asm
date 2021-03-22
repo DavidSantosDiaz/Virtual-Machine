@@ -3,7 +3,7 @@
 
 .data 20 ;dirección de inicio de los datos
 dw base	5
-dw exponente 2
+dw exponente 3
 dw limite1 0
 dw limite2 1
 dw extra 1
