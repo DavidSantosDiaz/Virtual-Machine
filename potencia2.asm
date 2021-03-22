@@ -1,6 +1,6 @@
 .ver 1
 
-.data 22 ;dirección de inicio de los datos
+.data 35 ;dirección de inicio de los datos
 dw base 5
 dw exp 3
 dw lim 1
@@ -24,16 +24,29 @@ eti:    add extra, resultado
         cmp uno, uno
         beq eti
 T:      add uno, lim
+        cmp lim, exp 
+end:    beq S
         cmp lim, exp
-end:    beq end
-U:      add resultado, extra
+fin:    beq fin
         cmp lim, dos
+        beq S
+U:      add resultado, extra     
+        cmp lim, dos    
         beq S
         cmp uno, uno
         beq rev
-S:      add base, resultado
+S:      cmp lim, dos
+        beq W
+R:      cmp lim, exp
+        beq fin
+        mov cero, extra
+        add uno, lim
+        add uno, exp
         cmp uno, uno
-        beq rev        
+        beq U 
+ W:     add base, resultado
+        cmp base, base
+        beq R    
   
         
         
